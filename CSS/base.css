@@ -43,21 +43,9 @@ body {
     text-align: center;
 }
 
-#Nome h2 {
-    font-size: 4vh;
-}
-
 #Descricao {
     text-align: center;
     width: 80%;
-}
-
-#Descricao h3 {
-    font-size: 1.6vh;
-}
-
-#Contato i {
-    font-size: 3vh;
 }
 
 #Contato a {
@@ -77,8 +65,7 @@ body {
     border: .5 solid #004aad;
     border-radius: 2.5vh;
     border: none;
-
-    font-size: 4vh;
+    font-size: 1.15em;
 
     transform: rotate(-90deg) scale(1);
 }
@@ -100,7 +87,6 @@ body {
 
 .btnText {
     color: #fff;
-    font-size: 2vh;
 }
 
 #btnEduc {
@@ -155,12 +141,16 @@ body {
     display: flex !important;
 }
 
+#telaCurs{
+    
+}
+
 #telaComp ul {
     margin-left: 2vh;
 }
 
 #telaComp li {
-    font-size: 2vh;
+    font-size: 1.2em;
 }
 
 #telaComp .classeO {
