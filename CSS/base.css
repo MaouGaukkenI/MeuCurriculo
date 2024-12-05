@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #d9eaf7;
+}
+
+#pagina {
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+
+    background-color: white;
+}
+
+#areaD {
+    background: linear-gradient(to left, #004aad, #000000 80%);
+    color: #fff;
+
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Nome {
+    text-align: center;
+}
+
+#Nome h2 {
+    font-size: 4vh;
+}
+
+#Descricao {
+    text-align: center;
+    width: 80%;
+}
+
+#Descricao h3 {
+    font-size: 1.6vh;
+}
+
+#Contato i {
+    font-size: 3vh;
+}
+
+#Contato a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#Navegacao {
+    width: .8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btnNav {
+    background-color: #004aad;
+    border: .5 solid #004aad;
+    border-radius: 2.5vh;
+    border: none;
+
+    font-size: 4vh;
+
+    transform: rotate(-90deg) scale(1);
+}
+
+.btnNav:hover {
+    transform: rotate(-90deg) scale(1.2);
+}
+
+.btnNav.active {
+    transform: rotate(-90deg) scale(1.2) !important;
+
+}
+
+.btnNav .btnText {
+    margin-top: 4vh !important;
+    margin-bottom: 1.5vh !important;
+    margin: 2vh;
+}
+
+.btnText {
+    color: #fff;
+    font-size: 2vh;
+}
+
+#btnEduc {
+    margin-top: 10vh;
+}
+
+#btnCurs {
+    margin-top: 8.5vh;
+}
+
+#btnComp {
+    margin-top: 11.5vh;
+}
+
+#btnComp.active {
+    margin-bottom: 14.4vh;
+}
+
+#btnComp.active+#btnExp {
+    margin-top: 0;
+}
+
+#btnExp {
+    margin-top: 13vh;
+}
+
+#btnExp.active {
+    margin-top: 14.4vh;
+}
+
+#btnHob {
+    margin-top: 10vh;
+}
+
+.telasBase {
+    width: 60%;
+    height: 100%;
+    margin-left: auto;
+    margin-left: 6vh;
+    display: none;
+    flex-direction: column;
+    color: #004aad;
+    justify-content: center;
+}
+
+.telasBase a {
+    text-decoration: none;
+    color: #004aad;
+}
+
+.active {
+    display: flex !important;
+}
+
+#telaComp ul {
+    margin-left: 2vh;
+}
+
+#telaComp li {
+    font-size: 2vh;
+}
+
+#telaComp .classeO {
+    cursor: pointer;
+}
+
+.opened {
+    display: block !important;
+}
+
+.textC {
+    display: none;
+}
+
+#telaHobi li {
+    margin-top: 2vh;
+}

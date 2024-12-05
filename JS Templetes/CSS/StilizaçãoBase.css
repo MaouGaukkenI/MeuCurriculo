@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* Opcional: remove também o preenchimento, caso necessário */
+    box-sizing: border-box;
+    /* Garante melhor controle do modelo de caixa */
+}
+
+button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.espaçador1 {
+    width: 3vh;
+    height: 3vh;
+}
+
+.espaçador2 {
+    width: 5vh;
+    height: 5vh;
+}
+
+.linha {
+    width: 50%;
+    margin-left: 5%;
+
+    height: .2vh;
+    background: linear-gradient(to left, #000000, #22566B 80%);
+
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
