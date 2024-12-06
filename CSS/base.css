@@ -177,9 +177,8 @@ body {
 @media (max-width: 768px) {
     #pagina {
         flex-direction: column;
-        width: 100%;
+        width: 95%;
         height: auto;
-        margin-right: 2vh;
     }
 
     #areaD {
