@@ -69,7 +69,6 @@ body {
     border: .5 solid #004aad;
     border-radius: 2.5vh;
     border: none;
-    font-size: 1.15em;
 
     transform: rotate(-90deg) scale(1);
 }

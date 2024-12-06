@@ -68,7 +68,7 @@ h5 {
 }
 
 /* Ajuste para telas menores que 361px */
-@media (max-width: 361px) {
+@media (max-width: 250px) {
     h1 {
         font-size: calc(3rem / 5); /* Divide o tamanho original por 8 */
     }
