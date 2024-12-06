@@ -16,7 +16,7 @@
     <div id="pagina">
         <nav id="areaD" style="z-index: 10;">
             <div class="espaçador1"></div>
-            
+
             <div id="Nome">
                 <h1 style="font-size: 2em;">Diogo Borchhardt Beloni</h1>
             </div>
@@ -270,7 +270,8 @@
             <a style="cursor: pointer;" onclick="toggleTexto()">
                 <h2>Mais informações</h2>
             </a>
-            <h4 id="infoTexto" style="display: none; font-size: 1em;">Durante o tempo na empresa, tive a oportunidade de estudar
+            <h4 id="infoTexto" style="display: none; font-size: 1em;">Durante o tempo na empresa, tive a oportunidade de
+                estudar
                 diversos aspectos do setor de fábricas, com
                 foco em processos de produção, controle de qualidade, gestão de estoques e logística de distribuição.
                 Com a formação em Desenho Técnico Mecânico com ênfase em CAD, pude aprofundar meus conhecimentos em
@@ -300,9 +301,20 @@
         <div class="espaçador1"></div>
     </div>
 
-    <!-- Corrija o caminho do script -->
     <script src="../JS Templetes/JS/btnPadrao.js"></script>
     <script src="../JS Templetes/JS/meusCabecalhos.js"></script>
+
+    <script>
+        function isMobileDevice() {
+            return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+
+        window.addEventListener('load', () => {
+            if (isMobileDevice()) {
+                alert("Se você estiver no celular, habilite o modo para computador para uma melhor experiência.");
+            }
+        });
+    </script>
 
     <script>
         function toggleTexto() {
