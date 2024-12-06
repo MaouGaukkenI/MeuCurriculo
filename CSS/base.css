@@ -1,3 +1,4 @@
+/*Edição base*/
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +19,7 @@ body {
     background-color: #d9eaf7;
 }
 
+/*Formato da pagina*/
 #pagina {
     max-width: 1000px;
     height: 100%;
@@ -27,6 +29,7 @@ body {
     background-color: white;
 }
 
+/*Area lateral com meus dados*/
 #areaD {
     background: linear-gradient(to left, #004aad, #000000 80%);
     color: #fff;
@@ -53,6 +56,7 @@ body {
     text-decoration: none;
 }
 
+/*Botões de navegação*/
 #Navegacao {
     width: .8vh;
     display: flex;
@@ -121,6 +125,7 @@ body {
     margin-top: 10vh;
 }
 
+/*Configurações gerais de todas telas*/
 .telasBase {
     width: 60%;
     height: 100%;
@@ -141,10 +146,7 @@ body {
     display: flex !important;
 }
 
-#telaCurs{
-    
-}
-
+/*Tela de competencias*/
 #telaComp ul {
     margin-left: 2vh;
 }
@@ -157,6 +159,7 @@ body {
     cursor: pointer;
 }
 
+/*Configrações de expansão de texto*/
 .opened {
     display: block !important;
 }
@@ -165,6 +168,53 @@ body {
     display: none;
 }
 
+/*Tela de hobbies*/
 #telaHobi li {
     margin-top: 2vh;
+}
+
+/* Versão para celular */
+@media (max-width: 768px) {
+    #pagina {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    #areaD {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    #Navegacao {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .btnNav {
+        transform: none;
+        margin: 0 10px;
+        font-size: 1em;
+    }
+
+    .telasBase {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    #Descricao {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    #telaComp li {
+        font-size: 1em;
+    }
+
+    #btnEduc, #btnCurs, #btnComp, #btnExp, #btnHob {
+        margin-top: 5vh;
+    }
 }
