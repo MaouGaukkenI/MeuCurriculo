@@ -47,3 +47,21 @@ h4 {
 h5 {
     font-size: clamp(0.0875rem, 2vw, 0.2rem); /* Mínimo 0.875rem, preferido 2vw, máximo 1.2rem */
 }
+
+@media (max-width: 810px) {
+    h1 {
+        font-size: calc(3rem / 3); /* Divide o tamanho original por 3 */
+    }
+    h2 {
+        font-size: calc(2.5rem / 3);
+    }
+    h3 {
+        font-size: calc(2rem / 3);
+    }
+    h4 {
+        font-size: calc(1.5rem / 3);
+    }
+    h5 {
+        font-size: calc(1.2rem / 3);
+    }
+}
