@@ -439,7 +439,8 @@
             </ul>
         </div>
 
-        <a href="https://drive.google.com/file/d/1HQFoeUord15fdF-0eKLuuSdATsl-UsPY/view?usp=sharing" target="_blank" class="sla">
+        <a href="https://drive.google.com/file/d/1HQFoeUord15fdF-0eKLuuSdATsl-UsPY/view?usp=sharing" target="_blank"
+            class="sla">
             <div class="btnStyle1 fs2"></div>
         </a>
         <div class="espaçador1"></div>
@@ -449,17 +450,29 @@
     <script src="../JS Templetes/JS/meusCabecalhos.js"></script>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        document.getElementById("btnS1-1").innerText = "Baixar Curriculo";
-    });
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("btnS1-1").innerText = "Baixar Curriculo";
+        });
     </script>
 
     <script>
         function toggleText(index) {
+            // Fecha todos os conteúdos e ícones antes de abrir o conteúdo selecionado
+            const allContents = document.querySelectorAll('.toggle-content');
+            const allIcons = document.querySelectorAll('.toggle-button span');
+
+            allContents.forEach((content, i) => {
+                if (i !== index - 1) { // Ignora o item clicado
+                    content.style.display = 'none'; // Fecha o conteúdo
+                    allIcons[i].className = 'bi bi-caret-left'; // Restaura o ícone
+                }
+            });
+
+            // Agora, abre o conteúdo clicado e alterna o ícone
             const content = document.getElementById("toggle-content-" + index);
             const icon = document.getElementById("toggle-icon-" + index);
             const isHidden = content.style.display === "none" || content.style.display === "";
-s
+
             // Alterna o estado do texto
             content.style.display = isHidden ? "block" : "none";
 
