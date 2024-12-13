@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //collors:
     const primary = '#F4F4F9';
-    const secondary = '#333333';
-    const success = 'rgb(74, 144, 226)';
+    const secondary = '#004AAD';
+    const success = '#004AAD';
     const success2 = 'rgb(165, 200, 241)';
 
     const fontSizes = {

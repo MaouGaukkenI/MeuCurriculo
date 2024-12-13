@@ -171,3 +171,12 @@ body {
 #telaHobi li {
     margin-top: 2vh;
 }
+
+/*Config btn download*/
+.sla{
+    width: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-top: 1vh;
+}

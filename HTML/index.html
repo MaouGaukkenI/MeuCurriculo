@@ -15,6 +15,7 @@
         .toggle-content {
             display: none;
         }
+
         .toggle-button {
             cursor: pointer;
             display: flex;
@@ -438,6 +439,9 @@
             </ul>
         </div>
 
+        <a href="https://drive.google.com/file/d/1HQFoeUord15fdF-0eKLuuSdATsl-UsPY/view?usp=sharing" target="_blank" class="sla">
+            <div class="btnStyle1 fs2"></div>
+        </a>
         <div class="espaçador1"></div>
     </div>
 
@@ -445,9 +449,9 @@
     <script src="../JS Templetes/JS/meusCabecalhos.js"></script>
 
     <script>
-        window.addEventListener('load', () => {
-            alert("Se você estiver no celular, habilite o modo para computador para uma melhor experiência.");
-        });
+        document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("btnS1-1").innerText = "Baixar Curriculo";
+    });
     </script>
 
     <script>
@@ -455,7 +459,7 @@
             const content = document.getElementById("toggle-content-" + index);
             const icon = document.getElementById("toggle-icon-" + index);
             const isHidden = content.style.display === "none" || content.style.display === "";
-
+s
             // Alterna o estado do texto
             content.style.display = isHidden ? "block" : "none";
 
