@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto Expandível</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .toggle-content {
+            display: none;
+        }
+        .toggle-button {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <a class="toggle-button" onclick="toggleText(1)">
+        <h2>Desenvolvimento de Software</h2>
+        <span id="toggle-icon-1" class="bi bi-caret-left"></span>
+    </a>
+    <ul id="toggle-content-1" class="toggle-content">
+        <li><h3>Planejamento e análise de requisitos.</h3></li>
+        <li><h3>Criação de soluções baseadas em algoritmos e lógica de programação.</h3></li>
+        <li><h3>Programação orientada a objetos.</h3></li>
+        <li><h3>Desenvolvimento de sistemas desktop e web.</h3></li>
+    </ul>
+    <br />
+
+    <!-- Linguagens de Programação -->
+    <a class="toggle-button" onclick="toggleText(2)">
+        <h2>Linguagens de Programação</h2>
+        <span id="toggle-icon-2" class="bi bi-caret-left"></span>
+    </a>
+    <ul id="toggle-content-2" class="toggle-content">
+        <li><h3>Java - Conceitos Abordados: Classes, objetos, herança, polimorfismo, encapsulamento, exceções, coleções, e manipulação de arquivos.</h3></li>
+        <li><h3>JavaScript - Conceitos Abordados: Manipulação de DOM, eventos, AJAX (para requisições assíncronas), manipulação de dados em tempo real, e integração com APIs.</h3></li>
+        <li><h3>HTML e CSS - Conceitos Abordados: Criação de páginas estáticas e responsivas, manipulação de elementos HTML, posicionamento e layout com CSS, e técnicas de design como Flexbox e Grid.</h3></li>
+        <li><h3>SQL - Conceitos Abordados: Criação de tabelas, relacionamentos entre dados, consultas (SELECT), agregações (COUNT, SUM, AVG), e manipulação de dados (INSERT, UPDATE, DELETE).</h3></li>
+        <li><h3>Git - Conceitos Abordados: Commits, branches, merges, clones, e operações de recuperação de versões anteriores.</h3></li>
+        <li><h3>JSON - Conceitos Abordados: Estrutura de objetos e arrays, conversão de JSON para objetos e vice-versa (JSON.parse() e JSON.stringify()), validação de dados com JSON Schema, e uso de JSON em APIs para troca de dados entre cliente e servidor.</h3></li>
+    </ul>
+    <br />
+
+    <!-- Banco de Dados -->
+    <a class="toggle-button" onclick="toggleText(3)">
+        <h2>Banco de Dados</h2>
+        <span id="toggle-icon-3" class="bi bi-caret-left"></span>
+    </a>
+    <ul id="toggle-content-3" class="toggle-content">
+        <li><h3>Modelagem de banco de dados relacional.</h3></li>
+        <li><h3>Linguagem SQL para criação, manipulação e consulta de dados.</h3></li>
+        <li><h3>Administração de sistemas de banco de dados.</h3></li>
+    </ul>
+    <br />
+
+    <!-- Versionamento e Controle de Código -->
+    <a class="toggle-button" onclick="toggleText(4)">
+        <h2>Versionamento e Controle de Código</h2>
+        <span id="toggle-icon-4" class="bi bi-caret-left"></span>
+    </a>
+    <ul id="toggle-content-4" class="toggle-content">
+        <li><h3>Uso de ferramentas como Git e GitHub para versionamento de software.</h3></li>
+        <li><h3>Gerenciamento de configurações de projetos.</h3></li>
+    </ul>
+    <br />
+
+    <!-- Testes e Qualidade de Software -->
+    <a class="toggle-button" onclick="toggleText(5)">
+        <h2>Testes e Qualidade de Software</h2>
+        <span id="toggle-icon-5" class="bi bi-caret-left"></span>
+    </a>
+    <ul id="toggle-content-5" class="toggle-content">
+        <li><h3>Planejamento e execução de testes de software.</h3></li>
+        <li><h3>Identificação e correção de bugs.</h3></li>
+        <li><h3>Implementação de melhorias contínuas.</h3></li>
+    </ul>
+    <br />
+
+    <!-- Desenvolvimento Web e Interfaces -->
+    <a class="toggle-button" onclick="toggleText(6)">
+        <h2>Desenvolvimento Web e Interfaces</h2>
+        <span id="toggle-icon-6" class="bi bi-caret-left"></span>
+    </a>
+    <ul id="toggle-content-6" class="toggle-content">
+        <li><h3>Criação de interfaces gráficas responsivas para sistemas web.</h3></li>
+        <li><h3>Uso de bibliotecas e frameworks (Bootstrap, jQuery, etc.).</h3></li>
+    </ul>
+    <br />
+
+    <!-- Gerenciamento de Projetos de Software -->
+    <a class="toggle-button" onclick="toggleText(7)">
+        <h2>Gerenciamento de Projetos de Software</h2>
+        <span id="toggle-icon-7" class="bi bi-caret-left"></span>
+    </a>
+    <ul id="toggle-content-7" class="toggle-content">
+        <li><h3>Utilização de ferramentas e metodologias ágeis (como Scrum e Kanban).</h3></li>
+        <li><h3>Planejamento e documentação técnica de projetos.</h3></li>
+    </ul>
+    <br />
+
+    <!-- Certificações Intermediárias -->
+    <a class="toggle-button" onclick="toggleText(8)">
+        <h2>Certificações Intermediárias</h2>
+        <span id="toggle-icon-8" class="bi bi-caret-left"></span>
+    </a>
+    <ul id="toggle-content-8" class="toggle-content">
+        <li><h3>Assistente de Administração de Banco de Dados</h3></li>
+        <li><h3>Assistente de Desenvolvimento de Sistemas</h3></li>
+        <li><h3>Lógica de programação e desenvolvimento de algoritmos</h3></li>
+        <li><h3>Criação de interfaces web com HTML, CSS e JavaScript</h3></li>
+        <li><h3>Modelagem e gerenciamento de banco de dados com SQL</h3></li>
+        <li><h3>Programação Orientada a Objetos (POO) utilizando Java</h3></li>
+        <li><h3>Desenvolvimento de aplicações móveis ou desktop</h3></li>
+        <li><h3>Utilização de frameworks front-end e back-end</h3></li>
+        <li><h3>Implementação de metodologias ágeis (como Scrum e Kanban)</h3></li>
+        <li><h3>Planejamento e documentação técnica de projetos de software</h3></li>
+        <li><h3>Versionamento de código com Git e GitHub</h3></li>
+        <li><h3>Aplicação de boas práticas de segurança no desenvolvimento de sistemas</h3></li>
+    </ul>
+    <br />
+
+    <!-- Soft Skills Relacionadas -->
+    <a class="toggle-button" onclick="toggleText(9)">
+        <h2>Soft Skills Relacionadas</h2>
+        <span id="toggle-icon-9" class="bi bi-caret-left"></span>
+    </a>
+    <ul id="toggle-content-9" class="toggle-content">
+        <li><h3>Capacidade de trabalho em equipe e colaboração.</h3></li>
+        <li><h3>Habilidades de comunicação em projetos técnicos.</h3></li>
+        <li><h3>Organização e gerenciamento do tempo em projetos ágeis.</h3></li>
+        <li><h3>Adaptação a novas tecnologias e resolução de problemas.</h3></li>
+    </ul>
+
+    <script>
+        function toggleText(index) {
+            const content = document.getElementById("toggle-content-" + index);
+            const icon = document.getElementById("toggle-icon-" + index);
+            const isHidden = content.style.display === "none" || content.style.display === "";
+
+            // Alterna o estado do texto
+            content.style.display = isHidden ? "block" : "none";
+
+            // Alterna o ícone
+            icon.className = isHidden ? "bi bi-caret-down-fill" : "bi bi-caret-left";
+        }
+    </script>
+</body>
+</html>
